@@ -3,6 +3,9 @@ name = "mcbe-rust-bindings"
 version = "0.1.0"
 edition = "2024"
 
+[dependencies]
+spinwait = "0.1.3"
+
 [dependencies.windows]
 version = "0.61.1"
 features = [

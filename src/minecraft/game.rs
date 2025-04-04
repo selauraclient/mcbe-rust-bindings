@@ -9,7 +9,7 @@ use windows::{
     core::Result,
 };
 
-use crate::windows::{App, CWSTR, Process};
+use crate::platform::windows::{App, CWSTR, Process};
 
 static APP: LazyLock<App> =
     LazyLock::new(|| App::new("Microsoft.MinecraftUWP_8wekyb3d8bbwe!App").unwrap());

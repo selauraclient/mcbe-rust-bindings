@@ -23,7 +23,7 @@ use windows::{
     core::{Error, Result},
 };
 
-use crate::windows::{Acl, CWSTR, Process, WSTR, procedure::Procedure};
+use crate::platform::windows::{Acl, CWSTR, Process, WSTR, procedure::Procedure};
 
 use super::Game;
 
