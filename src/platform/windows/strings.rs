@@ -1,5 +1,6 @@
 use windows::core::{PCSTR, PCWSTR, PWSTR};
 
+#[allow(dead_code)]
 pub struct CWSTR(pub PCWSTR, Vec<u16>);
 
 unsafe impl Send for CWSTR {}
@@ -15,6 +16,7 @@ impl CWSTR {
     }
 }
 
+#[allow(dead_code)]
 pub struct WSTR(pub PWSTR, Vec<u16>);
 
 unsafe impl Send for WSTR {}
@@ -30,6 +32,7 @@ impl WSTR {
     }
 }
 
+#[allow(dead_code)]
 pub struct CSTR(pub PCSTR, Vec<u8>);
 
 unsafe impl Send for CSTR {}
